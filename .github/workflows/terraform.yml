@@ -76,10 +76,8 @@ jobs:
       run : cd /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     
-    - run: pwd
-    - run : cd /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
-    - run: pwd
-    - run: terraform init       
+    - name: Terraform Intialize
+      run: terraform init       
       working-directory: /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
 
     # Checks that all Terraform configuration files adhere to a canonical format
