@@ -73,11 +73,11 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: move to terraform folder
-      run : cd env/stage
+      run : cd /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     
     - run: pwd
-    - run : cd env/stage
+    - run : cd /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
     - run: pwd
     - run: terraform init               
 
