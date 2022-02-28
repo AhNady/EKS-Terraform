@@ -79,7 +79,8 @@ jobs:
     - run: pwd
     - run : cd /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
     - run: pwd
-    - run: terraform init               
+    - run: terraform init       
+      working-directory: /home/runner/work/Terraform-Samples/Terraform-Samples/env/stage
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
