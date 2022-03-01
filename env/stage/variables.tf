@@ -1,11 +1,11 @@
 variable "access_key" {
   type    = string
-  default = "AKIA4CQNSHELSE3ZYBWL"
+  default = "AKIASZBQWJUNYASHKSF7"
 }
 
 variable "secret_key" {
   type    = string
-  default = "+ESQkGIkPuhsZ1cT56wVuWvqFMHXN9tTSHhwW/6M"
+  default = "txk01d7TVDm+GVk6MmdKR/crEMwgc8UhZmv92E87"
 }
 
 variable "aws-region" {
