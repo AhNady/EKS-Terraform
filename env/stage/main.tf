@@ -1,5 +1,5 @@
 module "network" {
-  source = "./modules/network"
+  source = "../../module/network"
 
   vpc_name = var.vpc_name
   vpc_cidr = var.vpc_cidr
@@ -21,7 +21,7 @@ module "network" {
 }
 
 module "eks" {
-  source = "./modules/eks"
+  source = "../../module/eks"
 
   cluster_name = var.cluster_name
   
